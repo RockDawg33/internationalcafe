@@ -1,10 +1,249 @@
 <!doctype html>
-<html>
-  <head>
-    <title>InternationalCafe.Org</title>
-  </head>
-  <body>
-    <h1>Welcome to InternationalCafe.Org</h1>
-    <p>This is a resource for the conscientious traveler.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Cafe</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #faf9f5;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 18px 60px;
+    }
+
+    header {
+      border-bottom: 1px solid #cfcfcf;
+      padding-bottom: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 2.1rem;
+      font-weight: 700;
+    }
+
+    .tagline {
+      margin: 0;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    nav {
+      margin-top: 14px;
+      font-size: 0.98rem;
+    }
+
+    nav a {
+      margin-right: 16px;
+      color: #0b57a3;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 18px;
+      margin-bottom: 28px;
+    }
+
+    .intro p {
+      margin: 0;
+    }
+
+    .homepage-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 18px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 8px;
+    }
+
+    .post-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .post-list li {
+      margin-bottom: 16px;
+    }
+
+    .post-list a {
+      color: #0b57a3;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .post-list a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 0.92rem;
+      margin-top: 3px;
+    }
+
+    .blurb {
+      margin-top: 5px;
+      color: #333;
+    }
+
+    .simple-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .simple-list li {
+      margin-bottom: 8px;
+    }
+
+    .simple-list a {
+      color: #0b57a3;
+      text-decoration: none;
+    }
+
+    .simple-list a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: #666;
+      font-size: 0.92rem;
+      border-top: 1px solid #cfcfcf;
+      padding-top: 16px;
+    }
+
+    @media (max-width: 760px) {
+      .homepage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>International Cafe</h1>
+      <p class="tagline">For the conscientious traveler.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#tips">Tips</a>
+        <a href="#destinations">Destinations</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <div class="intro">
+      <p>
+        International Cafe is a simple place to share travel experiences, thoughtful recommendations,
+        and practical tips with a spirit of care — for local communities, for small businesses, and for
+        the places we visit. I’m starting with my own family’s experiences and hope, over time, to grow
+        this into a welcoming archive for conscientious travelers everywhere.
+      </p>
+    </div>
+
+    <div class="homepage-grid">
+      <main>
+        <section id="experiences">
+          <h2>Recent Experiences</h2>
+          <ul class="post-list">
+            <li>
+              <a href="naedo-island.html">Hiking Naedo Island with My Family</a>
+              <div class="meta">South Korea · family outing · nature · local travel</div>
+              <div class="blurb">
+                A beautiful day on Naedo Island that reminded me how meaningful travel can be when it is
+                simple, respectful, and rooted in appreciation for local places.
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="tips">
+          <h2>Useful Tips</h2>
+          <ul class="simple-list">
+            <li>Choose local ferries, cafes, and family-run restaurants when possible.</li>
+            <li>Bring reusable water bottles and small snacks to reduce waste.</li>
+            <li>Travel at a slower pace and leave room for unplanned discoveries.</li>
+            <li>Look for places where walking, public transit, or ferries reduce the need for cars.</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <section id="destinations">
+          <h2>Destinations</h2>
+          <ul class="simple-list">
+            <li><a href="naedo-island.html">Korea</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What You'll Find Here</h2>
+          <ul class="simple-list">
+            <li>Personal travel stories</li>
+            <li>Family-friendly ideas</li>
+            <li>Practical tips</li>
+            <li>Thoughtful recommendations</li>
+            <li>Simple ways to travel more responsibly</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Coming Soon</h2>
+          <ul class="simple-list">
+            <li>More Korea day trips and family outings</li>
+            <li>Traveler-submitted experiences</li>
+            <li>Local business recommendations</li>
+            <li>Packing and planning tips</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <p>
+        International Cafe is an evolving project. For now, it’s a personal collection of experiences and ideas
+        gathered with care and shared in good faith.
+      </p>
+    </footer>
+  </div>
+</body>
 </html>
